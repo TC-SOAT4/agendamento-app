@@ -18,9 +18,10 @@ public class AgendamentoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID idAgendamento;
+    private UUID idAgenda;
     private UUID idMedico;
     private UUID idPaciente;
-    private UUID idHorario;
+    private Long idHorario;
     private StatusAgendamento status;
     private String observacao;
 }

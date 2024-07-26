@@ -4,5 +4,5 @@ import java.util.UUID;
 
 public interface IConfirmarAgendamento {
 
-    public void executar(UUID agendamentoId);
+    public void executar(UUID agendamentoId, String bearerToken);
 }

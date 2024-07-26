@@ -26,6 +26,14 @@ public class AgendamentoRepositoryGateway implements IAgendamentoGateway {
     }
 
     @Override
+    public Agendamento buscarPorId(UUID agendamentoId) {
+        AgendamentoEntity agendamentoEntity = agendamentoEntityRepository.findById(agendamentoId)
+                .orElseThrow(() -> new RuntimeException(String.format("Agendamento com ID %s nao existe.", agendamentoId)));
+
+        return agendamentoMapper.toAgendamento(agendamentoEntity);
+    }
+
+    @Override
     public Agendamento salvar(Agendamento agendamento) {
         AgendamentoEntity agendamentoEntity = agendamentoMapper.toAgendamentoEntity(agendamento);
         AgendamentoEntity response = agendamentoEntityRepository.save(agendamentoEntity);

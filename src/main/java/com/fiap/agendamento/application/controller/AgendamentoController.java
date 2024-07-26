@@ -40,8 +40,11 @@ public class AgendamentoController {
 
     @PutMapping("/{id}/confirmar")
     @Operation(summary = "Confirmar agendamento", description = "Confirmar agendamento por ID")
-    public ResponseEntity<Void> confirmarAgendamento(@PathVariable(name = "id") String idAgendamento) {
-        confirmarAgendamento.executar(UUID.fromString(idAgendamento));
+    public ResponseEntity<Void> confirmarAgendamento(
+            @PathVariable(name = "id") String idAgendamento
+//            @RequestHeader("Authorization") String bearerToken
+    ) {
+        confirmarAgendamento.executar(UUID.fromString(idAgendamento), "bearerToken");
         return ResponseEntity.ok().build();
     }
 

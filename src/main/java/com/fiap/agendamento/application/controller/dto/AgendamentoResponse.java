@@ -10,9 +10,10 @@ import lombok.Setter;
 @Builder
 public class AgendamentoResponse {
     private String idAgendamento;
+    private String idAgenda;
     private String idMedico;
     private String idPaciente;
-    private String idHorario;
+    private Long idHorario;
     private StatusAgendamento status;
     private String observacao;
 }

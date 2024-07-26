@@ -8,8 +8,9 @@ import java.util.UUID;
 @Getter
 @Builder
 public class NovoAgendamentoDto {
+    private UUID idAgenda;
     private UUID idMedico;
     private UUID idPaciente;
-    private UUID idHorario;
+    private Long idHorario;
     private String observacao;
 }

@@ -19,6 +19,7 @@ public class SqsAgendamentoListener {
     public void receiveMessage(String json) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         FilaAgendamentoDto filaAgendamentoDto = objectMapper.readValue(json, FilaAgendamentoDto.class);
+
         NovoAgendamentoDto novoAgendamentoDto = NovoAgendamentoDto.builder()
                 .idMedico(filaAgendamentoDto.getIdMedico())
                 .idPaciente(filaAgendamentoDto.getIdPaciente())
