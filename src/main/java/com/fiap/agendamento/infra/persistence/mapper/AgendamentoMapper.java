@@ -3,9 +3,9 @@ package com.fiap.agendamento.infra.persistence.mapper;
 import com.fiap.agendamento.application.controller.dto.AgendamentoResponse;
 import com.fiap.agendamento.application.controller.dto.NovoAgendamentoDto;
 import com.fiap.agendamento.domain.entity.Agendamento;
+import com.fiap.agendamento.infra.persistence.entity.AgendamentoEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
-import com.fiap.agendamento.infra.persistence.entity.AgendamentoEntity;
 
 import java.util.List;
 

@@ -10,8 +10,6 @@ import com.fiap.agendamento.infra.persistence.mapper.AgendamentoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.util.UUID;
-
 @Component
 @RequiredArgsConstructor
 public class CadastrarAgendamento implements ICadastrarAgendamento {
