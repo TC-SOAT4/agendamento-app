@@ -12,8 +12,9 @@ import java.util.UUID;
 @Builder
 public class Agendamento {
     private UUID idAgendamento;
-    private UUID pacienteId;
-    private UUID horarioId;
+    private UUID idMedico;
+    private UUID idPaciente;
+    private UUID idHorario;
     private StatusAgendamento status;
     private String observacao;
 }

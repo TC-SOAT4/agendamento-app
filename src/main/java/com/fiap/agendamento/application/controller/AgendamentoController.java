@@ -1,7 +1,7 @@
 package com.fiap.agendamento.application.controller;
 
 import com.fiap.agendamento.application.controller.dto.AgendamentoResponse;
-import com.fiap.agendamento.application.controller.dto.NovoAgendamentoRequest;
+import com.fiap.agendamento.application.controller.dto.NovoAgendamentoDto;
 import com.fiap.agendamento.domain.usecase.ICadastrarAgendamento;
 import com.fiap.agendamento.domain.usecase.ICancelarAgendamento;
 import com.fiap.agendamento.domain.usecase.IConfirmarAgendamento;
@@ -33,9 +33,9 @@ public class AgendamentoController {
     @PostMapping()
     @Operation(summary = "Cadastrar um novo agendamento", description = "Cadastrar um novo agendamento")
     public ResponseEntity<AgendamentoResponse> cadastrarAgendamento(
-            @RequestBody @Valid NovoAgendamentoRequest novoAgendamentoRequest
+            @RequestBody @Valid NovoAgendamentoDto novoAgendamentoDto
     ) {
-        return ResponseEntity.status(201).body(cadastrarAgendamento.executar(novoAgendamentoRequest));
+        return ResponseEntity.status(201).body(cadastrarAgendamento.executar(novoAgendamentoDto));
     }
 
     @PutMapping("/{id}/confirmar")
