@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.UUID;
 
 @Getter
@@ -12,7 +14,13 @@ import java.util.UUID;
 @ToString
 @NoArgsConstructor
 public class FilaAgendamentoDto {
+
     private UUID idMedico;
     private UUID idPaciente;
     private Long idHorario;
+    private LocalTime inicio;
+    private LocalTime fim;
+    private LocalDate dia;
+    
+    
 }

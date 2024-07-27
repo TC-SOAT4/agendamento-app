@@ -20,7 +20,7 @@ public class ConfirmarAgendamento implements IConfirmarAgendamento {
     public void executar(UUID agendamentoId, String bearerToken) {
         Agendamento agendamento = agendamentoGateway.buscarPorId(agendamentoId);
         agendamentoGateway.confirmarAgendamento(agendamentoId);
-        agendaAppClient.confirmarAgendamento(agendamento.getIdAgenda(), agendamento.getIdHorario(), bearerToken);
+        // agendaAppClient.confirmarAgendamento(agendamento.getIdAgenda(), agendamento.getIdHorario(), bearerToken);
     }
 
 }
