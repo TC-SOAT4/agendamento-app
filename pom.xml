@@ -40,7 +40,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/TC-SOAT4/agenda-app</url>
+			<url>https://maven.pkg.github.com/TC-SOAT4/agendamento-app</url>
 		</repository>
 	</distributionManagement>
 	<dependencies>
