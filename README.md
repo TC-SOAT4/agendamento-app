@@ -7,9 +7,11 @@ Microsserviço desenvolvido para cadastro de consultas/agendaemntos
 
 **Tecnologias**: 
  - Projeto em Java 17 
- - Spring-boot 3 Mariadb
- -  Path: /agendamento-app
--   Porta: 8080
+ - Spring-boot 3
+ - Mariadb
+ - SQS
+ - Path: /agendamento-app
+ - Porta: 8080
  
 
 **Pipeline** 
