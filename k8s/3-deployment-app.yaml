@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: agenda-app
-          image: thiagobsn/agenda-app
+          image: thiagobsn/agendamento-app
           ports:
             - containerPort: 8080
           env:
