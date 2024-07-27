@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: svc-agenda-app
+  name: svc-agendamento-app
 spec:
   selector:
-    app: app-agenda-pod
+    app: app-agendamento-pod
   #type: NodePort
   type: LoadBalancer
   ports:
     - port: 80
       targetPort: 8080
-      nodePort: 30080
+      nodePort: 30084
 
 # Alterar o type para LoadBalancer para rodar no eks
 # Alterar o type para NodePort para rodar no locahost
